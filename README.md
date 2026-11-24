@@ -4,6 +4,16 @@
 
 A report can quote the right values and still recommend the wrong action. This course teaches you to make an AI claim testable, run a check that can disagree with it, and communicate what is safe to conclude. Basic ratios and probability help; Python and AI accounts are optional.
 
+## Learning outcomes
+
+After working through this draft, readers should be able to:
+
+- Make a claim testable and check the quantities and evidence it depends on.
+- Interpret calibration, thresholds, shifts, and uneven burdens rather than relying on a single aggregate.
+- Use an audit to make a defensible release, restrict, or hold recommendation.
+
+## Chapters
+
 1. [Make the claim small enough to check](chapters/01-make-the-claim-testable.md)
 2. [Make a probability earn its precision](chapters/02-calibration-and-thresholds.md)
 3. [Change the wrapper before changing the world](chapters/03-robustness-and-shift.md)
