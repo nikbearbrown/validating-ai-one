@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="425" viewBox="0 0 700 425" role="img" aria-labelledby="title desc">
+<title id="title">Reported library visits by window</title>
+<desc id="desc">Grouped bars for two reporting windows. Oak: 40 before, 50 after. Harbor: 80 before, 90 after. Values count visits, not people.</desc>
+<rect width="700" height="425" fill="#ffffff"/>
+<g font-family="system-ui, sans-serif" fill="#181e29">
+<text x="26" y="36" font-size="25" font-weight="700">Reported library visits by window</text>
+<text x="27" y="59" font-size="15">Two equally long reporting windows · Synthetic case</text>
+<rect x="28" y="76" width="22" height="14" fill="#ffffff" stroke="#24537c" stroke-width="2"/>
+<text x="56" y="89" font-size="15">Before</text>
+<rect x="127" y="76" width="22" height="14" fill="#24537c"/>
+<text x="155" y="89" font-size="15">After</text>
+<text x="30" y="116" font-size="14">Visits</text>
+<path d="M88 352H674" stroke="#a2aab5"/>
+<text x="78" y="357" text-anchor="end" font-size="14">0</text>
+<path d="M88 312H674" stroke="#a2aab5"/>
+<text x="78" y="317" text-anchor="end" font-size="14">20</text>
+<path d="M88 272H674" stroke="#a2aab5"/>
+<text x="78" y="277" text-anchor="end" font-size="14">40</text>
+<path d="M88 232H674" stroke="#a2aab5"/>
+<text x="78" y="237" text-anchor="end" font-size="14">60</text>
+<path d="M88 192H674" stroke="#a2aab5"/>
+<text x="78" y="197" text-anchor="end" font-size="14">80</text>
+<path d="M88 152H674" stroke="#a2aab5"/>
+<text x="78" y="157" text-anchor="end" font-size="14">100</text>
+<rect id="Oak-Before" x="160" y="272" width="76" height="80" fill="#ffffff" stroke="#24537c" stroke-width="2"/>
+<text id="Oak-Before-value" x="198" y="263" text-anchor="middle" font-size="17" font-weight="700">40</text>
+<rect id="Oak-After" x="242" y="252" width="76" height="100" fill="#24537c" stroke="#24537c" stroke-width="2"/>
+<text id="Oak-After-value" x="280" y="243" text-anchor="middle" font-size="17" font-weight="700">50</text>
+<text x="239" y="385" text-anchor="middle" font-size="18" font-weight="700">Oak</text>
+<rect id="Harbor-Before" x="441" y="192" width="76" height="160" fill="#ffffff" stroke="#24537c" stroke-width="2"/>
+<text id="Harbor-Before-value" x="479" y="183" text-anchor="middle" font-size="17" font-weight="700">80</text>
+<rect id="Harbor-After" x="523" y="172" width="76" height="180" fill="#24537c" stroke="#24537c" stroke-width="2"/>
+<text id="Harbor-After-value" x="561" y="163" text-anchor="middle" font-size="17" font-weight="700">90</text>
+<text x="520" y="385" text-anchor="middle" font-size="18" font-weight="700">Harbor</text>
+</g>
+</svg>

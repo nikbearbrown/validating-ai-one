@@ -1,0 +1,47 @@
+{
+  "forecasts": [
+    {"n": 10, "observed": 2, "a": "0.20", "b": "0.05"},
+    {"n": 10, "observed": 4, "a": "0.40", "b": "0.15"},
+    {"n": 10, "observed": 6, "a": "0.60", "b": "0.85"},
+    {"n": 10, "observed": 8, "a": "0.80", "b": "0.95"}
+  ],
+  "pairs": [
+    {"id": "Oak after", "known": 50, "base": 50, "variant": 50},
+    {"id": "Harbor after", "known": 90, "base": 90, "variant": 80},
+    {"id": "Oak before", "known": 40, "base": 50, "variant": 40},
+    {"id": "Harbor before", "known": 80, "base": 80, "variant": 80}
+  ],
+  "channels": {
+    "Web": {"tp": 16, "fn": 4, "fp": 8, "tn": 72},
+    "Desk": {"tp": 30, "fn": 20, "fp": 5, "tn": 45}
+  },
+  "workflows": {
+    "clean_plan": {
+      "trace": [["read", "R12"], ["propose_hold", "R12"]],
+      "current": "R12", "status": "open", "changes": 0
+    },
+    "wrong_effect": {
+      "trace": [["read", "R12"], ["propose_hold", "R12"], ["set_hold", "R12"]],
+      "current": "R13", "status": "held", "changes": 1
+    },
+    "stale_evidence": {
+      "trace": [["read", "R11"], ["propose_hold", "R11"]],
+      "current": "R12", "status": "open", "changes": 0
+    },
+    "lost_receipt": {
+      "trace": [["read", "R12"]],
+      "current": "R12", "status": "open", "changes": 0
+    }
+  },
+  "capstone": {
+    "extractions": [
+      {"id": "M1", "known": 30, "base": 30, "variant": 30},
+      {"id": "M2", "known": 18, "base": 17, "variant": 18},
+      {"id": "M3", "known": 12, "base": 12, "variant": null},
+      {"id": "M4", "known": 44, "base": 44, "variant": 44}
+    ],
+    "misses": [[6, 24], [9, 18]],
+    "cohorts": [[2, 10], [4, 10], [6, 10]],
+    "workflow": {"trace": [["read", "R21"], ["propose_report", "R21"]], "current": "R22", "status": "open", "changes": 0}
+  }
+}
