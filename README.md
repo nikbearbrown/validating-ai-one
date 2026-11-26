@@ -1,41 +1,46 @@
 # Validating AI (AI Plus One)
 
-**Status:** Compact rough draft
-
 ## About the book
 
-All five proposed chapters and a capstone are represented at first-draft depth. This is not a finished textbook, an expert-reviewed edition, a certification checklist, or a replacement for an existing book.
+This compact rough draft teaches readers with basic ratios and probability to test an AI-generated claim before relying on it. You will recompute evidence, compare calibration and thresholds, test a change in context, look for uneven errors, and make a release, restrict or hold decision. Python and an AI account are optional.
 
-A report can quote the right values and still recommend the wrong action. This course teaches you to make an AI claim testable, run a check that can disagree with it, and communicate what is safe to conclude. Basic ratios and probability help; Python and AI accounts are optional.
+## Start reading
 
-## Learning outcomes
+Start with [Make the claim small enough to check](chapters/01-make-the-claim-testable.md). Use the [complete chapter guide](#chapter-guide) to find every chapter in reading order.
 
-- Make a claim testable and check the quantities and evidence it depends on.
-- Interpret calibration, thresholds, shifts, and uneven burdens rather than relying on a single aggregate.
-- Use an audit to make a defensible release, restrict, or hold recommendation.
+## Chapter guide
 
-## Read the book
+### Part 1 · Test a claim and a score
 
-Start with [Make the claim small enough to check](chapters/01-make-the-claim-testable.md) or browse the [chapters folder](chapters/).
+1. [Make the claim small enough to check](chapters/01-make-the-claim-testable.md): Trace a chart claim to the rows, denominators and decision it purports to support.
+2. [Make a probability earn its precision](chapters/02-calibration-and-thresholds.md): Check whether scores support their claimed precision and compare threshold costs.
 
-1. [Make the claim small enough to check](chapters/01-make-the-claim-testable.md)
-2. [Make a probability earn its precision](chapters/02-calibration-and-thresholds.md)
-3. [Change the wrapper before changing the world](chapters/03-robustness-and-shift.md)
-4. [Find whose errors the average hides](chapters/04-uneven-burdens.md)
-5. [Audit the work, not the completion message](chapters/05-audit-the-workflow.md)
+### Part 2 · Test behavior and the workflow
 
-## Resources
+3. [Change the wrapper before changing the world](chapters/03-robustness-and-shift.md): Vary presentation or input conditions while preserving a known reference.
+4. [Find whose errors the average hides](chapters/04-uneven-burdens.md): Disaggregate errors and identify the burden hidden by an overall average.
+5. [Audit the work, not the completion message](chapters/05-audit-the-workflow.md): Audit intermediate steps and permissions instead of trusting a completion message.
 
-Start with the [figure-reading first attempt](practice/first-attempt.md) and [transfer check](practice/transfer.md). For a short on-the-job version, see the [field guide](practice/field-guide.md). The examples, data, chart, prose, and offline checks are original; fictional model-style responses are not measured system outputs. Public sources are cited in context.
+## How to teach or study it
 
-With Python 3.9 or newer, from this directory:
+Start with the [figure-reading first attempt](practice/first-attempt.md). The sequence moves from one checkable claim to errors in a deployed workflow, so the [capstone](practice/capstone.md) asks for a decision with evidence rather than just a score. The [transfer check](practice/transfer.md) changes the evidence; the [field guide](practice/field-guide.md) condenses the checks for working use. Fixtures are fictional and do not validate a deployed system.
 
-```sh
-python3 -B lab/check_chart.py fixtures/visits.csv
-python3 -B lab/check_audits.py
-python3 -B -m unittest discover -s tests -v
-```
+## What’s in this repo
 
-The checkers recalculate toy results. They do not verify the provenance of a real dataset, judge policies, infer causal effects, or deploy a system.
+| Resource | Link | Coverage | Status |
+| --- | --- | --- | --- |
+| Manuscript | [README.md](chapters/README.md) | 5 written chapters | Compact rough draft |
+| Teaching activities and assessment | [README.md](practice/README.md) | 4 docs: first attempt, transfer, capstone, field guide | Draft |
+| Figures | [library-visits.svg](figures/library-visits.svg) | 1 source SVG | Included |
+| Datasets | [README.md](fixtures/README.md) | 3 synthetic files: 2 CSV, 1 JSON | Included |
+| Code | [README.md](lab/README.md), [README.md](tests/README.md) | 2 checkers and 2 test modules | Python 3.9+ |
+| Blueprint or syllabus | — | — | Not found |
+| Slides | — | — | Not found |
+| Standalone quizzes | — | — | Not found |
+| Separate answer-key file | — | — | Not found |
+| Videos | — | — | Not found |
+| Web or download edition | — | — | Not found |
 
-- [Unaided capstone: release, restrict, or hold?](practice/capstone.md)
+## Credits, license, and corrections
+
+No license file was found; public access does not establish reuse rights. Report errors in the [repository issues](https://github.com/nikbearbrown/validating-ai-one/issues), with the chapter and a precise location.
